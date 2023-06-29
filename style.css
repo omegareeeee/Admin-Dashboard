@@ -2,6 +2,7 @@ body, html{
     height: 100%;
     margin: 0;
     font-family: "Roboto";
+    
 }
   
 .container{
@@ -18,6 +19,76 @@ body, html{
 
 .header{
     grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+}
+form{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+.mini-profile{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+.search-bar{
+    grid-column: 1/3;
+
+    display: grid;
+    grid-auto-flow: column;
+}
+.header-button{
+    background-color: #1992D3;
+    border: none;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+}
+input{
+    border: none;
+    height: 25px;
+    border-radius: 15px;
+    width: 100%;
+    background-color: #E2E8F0;
+}
+label img{
+    height: 25px;
+}
+.header-button-container{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+.search-bar .bell{
+    height: 25px;
+}
+.profile-picture{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.user-info{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    align-items: center;
+}
+.user-info img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
 
 .sidebar{
@@ -68,5 +139,81 @@ body, html{
 
 
 .main{
-    background-color: #d1d5db;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 25px;
+    background-color: #DAE0E8;
+    gap: 25px;
 }
+
+.trending-container{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.trending{
+    display: grid;
+}
+.trending, .announcements{
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+.other-user{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+}
+.other-user img{
+    height: 50px;
+    width: 50px;
+}
+
+.projects{
+    grid-column: 1 /2;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.projects-heading{
+    height: fit-content;
+}
+.title{
+    font-size: 20px;
+}
+.description{
+    font-size: 15px;
+    color: rgb(91, 91, 91);
+}
+.announcement-container{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.annoucment-description{
+    color: rgb(91, 91, 91);
+    font-size: 13px;
+}
+.announcements{
+    display: grid;
+}
+.card-container{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(350px
+     ,1fr));
+}
+.card{
+    background-color: white;
+    display: grid;
+    padding: 15px;
+    border-radius: 5px;
+    height: 250px;
+    align-content: center;
+    gap: 10px;
+}
+.card-buttons{
+}
+.card img{
+    height: 25px;
+}
+
