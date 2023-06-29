@@ -34,15 +34,16 @@ form{
 .mini-profile{
     display: grid;
     grid-auto-flow: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     column-gap: 30px;
+    padding-right: 40px;
 }
 .search-bar{
     grid-column: 1/3;
 
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr auto;
 }
 .header-button{
     background-color: #1992D3;
@@ -54,9 +55,9 @@ form{
 }
 input{
     border: none;
-    height: 25px;
+    height: 30px;
     border-radius: 15px;
-    width: 100%;
+    width: 75%;
     background-color: #E2E8F0;
 }
 label img{
@@ -65,9 +66,10 @@ label img{
 .header-button-container{
     display: grid;
     grid-auto-flow: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     column-gap: 30px;
+    padding-right: 40px;
 }
 .search-bar .bell{
     height: 25px;
